@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "b5b2d364-12ef-4028-bf8b-2f1445d41005",
+		"name": "TK2 - Kalkulator Nilai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26396006"
+	},
+	"item": [
+		{
+			"name": "Score Input",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "scName",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "scQuiz",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "scTugas",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scAbsensi",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scPraktek",
+							"value": "70",
+							"type": "text"
+						},
+						{
+							"key": "scUAS",
+							"value": "80",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/inputnilai",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"inputnilai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Get by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "scName",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "scQuiz",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "scTugas",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scAbsensi",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scPraktek",
+							"value": "70",
+							"type": "text"
+						},
+						{
+							"key": "scUAS",
+							"value": "80",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/scoreGet/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"scoreGet",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Get All",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/scoreGet/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"scoreGet",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Update by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "scName",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "scQuiz",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "scTugas",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scAbsensi",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scPraktek",
+							"value": "70",
+							"type": "text"
+						},
+						{
+							"key": "scUAS",
+							"value": "80",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/scoreUpdate/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"scoreUpdate",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Delete by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "scName",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "scQuiz",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "scTugas",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scAbsensi",
+							"value": "99",
+							"type": "text"
+						},
+						{
+							"key": "scPraktek",
+							"value": "70",
+							"type": "text"
+						},
+						{
+							"key": "scUAS",
+							"value": "80",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/scoreDelete/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"scoreDelete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
