@@ -8,8 +8,8 @@
 </head>
 <body>
 <header>
-{{--    <h1>Input Nilai</h1>--}}
-    <h2>*hanya untuk kalkulasi, untuk save kedatabe melalui api</h2>
+    <h1>Input Nilai</h1>
+    <h5>*hanya untuk kalkulasi, untuk save ke-database melalui api</h5>
 </header>
 <form action="{{ route('Grade') }}" method="post">
     @csrf

@@ -9,8 +9,6 @@
 
 ## Requirement
 - mysql db = TK2_InputNilai
-- 
-- php artisan serve
 
 ## About Laravel
 
